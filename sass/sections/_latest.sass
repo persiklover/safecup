@@ -1,0 +1,79 @@
+.latest
+  &-wrap
+    display: flex
+    padding: 2rem 0
+    +md
+      flex-direction: column
+  &-review
+    width: (100% / 3)
+    display: flex
+    flex-direction: column
+    padding: 2rem
+    border-right: .1rem solid rgb(216, 221, 232)
+    &:last-child
+      border-right: none
+    +md
+      width: 100%
+    +sm
+      padding-left:  1rem
+      padding-right: 1rem
+    &__img
+      text-align: center
+      height: 7rem
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        max-height: 100%
+
+.rating
+  padding: 0 1.5rem
+  margin: 3rem auto 0
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__score
+    color: rgb(68, 72, 76)
+    font-weight: 700
+    font-size: 42px
+    border: 1px solid rgb(216, 221, 232)
+    border-radius: 5px
+    line-height: 50px
+    padding: 5px
+  &__aside
+    text-align: center
+
+.stars
+  text-align: left
+  margin-bottom: 1rem
+
+.fa-star
+  color: rgb(254, 217, 71)
+  &--empty
+    color: rgb(161, 168, 189)
+
+.recommendations
+  color: rgb(161, 168, 189)
+.fa-meh
+  margin-left: 2rem
+
+.review-content
+  border-radius: 6px
+  border: 1px solid rgb(216, 221, 232)
+  background-color: rgb(245, 248, 252)
+  margin-top: 3rem
+  padding: 1.25rem
+  text-align: center
+  &__author
+    font-weight: bold
+    &:before
+      content: '– '
+  &__btn
+    display: block
+    width: fit-content
+    margin: 0 auto
+    margin-top: 1rem
+    background-color: rgb(139, 101, 199)
+    &:hover
+      background-color: lighten(rgb(139, 101, 199), 10)
